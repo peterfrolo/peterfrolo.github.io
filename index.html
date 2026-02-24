@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peter Frolo — Fotograf Slovensko</title>
+  <meta name="description" content="Minimalistické portfólio fotografa Petra Frola. Fotografovanie na Slovensku. Portréty, firemné a brandingové fotografie." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.peterfrolo.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Peter Frolo — Fotograf Slovensko" />
+  <meta property="og:description" content="Portfólio. Portréty, firemné a brandingové fotografie." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.peterfrolo.com/" />
+  <meta property="og:image" content="https://www.peterfrolo.com/images/hero.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo" href="#top" aria-label="Peter Frolo">Peter Frolo</a>
+
+    <nav class="nav" aria-label="Hlavná navigácia">
+      <a href="#portfolio">Portfólio</a>
+      <a href="#about">O mne</a>
+      <a href="#contact" class="cta">Kontakt</a>
+    </nav>
+
+    <button class="menuBtn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="heroMedia">
+        <img src="images/hero.jpg" alt="Ukážková fotografia — Peter Frolo" loading="eager" />
+      </div>
+
+      <div class="heroCopy">
+        <div>
+          <h1>Fotograf Slovensko</h1>
+          <p class="lead">
+            Portréty, firemné a brandingové fotografie. Čistý štýl, dôraz na svetlo a detail.
+          </p>
+        </div>
+
+        <div class="heroActions">
+          <a class="button" href="#contact">Nezáväzný dopyt</a>
+          <a class="button ghost" href="#portfolio">Pozrieť portfólio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section" id="portfolio">
+      <div class="sectionHead">
+        <h2>Portfólio</h2>
+        <p class="muted">Kurácia. Menej fotiek, vyššia kvalita.</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filtrovanie portfólia">
+        <button class="chip isActive" data-filter="all" role="tab" aria-selected="true">Všetko</button>
+        <button class="chip" data-filter="portrait" role="tab" aria-selected="false">Portréty</button>
+        <button class="chip" data-filter="corporate" role="tab" aria-selected="false">Firemné</button>
+        <button class="chip" data-filter="branding" role="tab" aria-selected="false">Branding</button>
+      </div>
+
+      <div class="grid" id="grid">
+        <figure class="tile" data-tags="portrait">
+          <img src="images/p01.jpg" alt="Portrét 1" loading="lazy" />
+        </figure>
+        <figure class="tile" data-tags="corporate">
+          <img src="images/p02.jpg" alt="Firemná fotografia 1" loading="lazy" />
+        </figure>
+        <figure class="tile" data-tags="branding">
+          <img src="images/p03.jpg" alt="Branding 1" loading="lazy" />
+        </figure>
+
+        <figure class="tile" data-tags="portrait"><img src="images/p04.jpg" alt="Portrét 2" loading="lazy" /></figure>
+        <figure class="tile" data-tags="corporate"><img src="images/p05.jpg" alt="Firemná fotografia 2" loading="lazy" /></figure>
+        <figure class="tile" data-tags="branding"><img src="images/p06.jpg" alt="Branding 2" loading="lazy" /></figure>
+
+        <figure class="tile" data-tags="portrait"><img src="images/p07.jpg" alt="Portrét 3" loading="lazy" /></figure>
+        <figure class="tile" data-tags="corporate"><img src="images/p08.jpg" alt="Firemná fotografia 3" loading="lazy" /></figure>
+        <figure class="tile" data-tags="branding"><img src="images/p09.jpg" alt="Branding 3" loading="lazy" /></figure>
+
+        <figure class="tile" data-tags="portrait"><img src="images/p10.jpg" alt="Portrét 4" loading="lazy" /></figure>
+        <figure class="tile" data-tags="corporate"><img src="images/p11.jpg" alt="Firemná fotografia 4" loading="lazy" /></figure>
+        <figure class="tile" data-tags="branding"><img src="images/p12.jpg" alt="Branding 4" loading="lazy" /></figure>
+
+        <figure class="tile" data-tags="portrait"><img src="images/p13.jpg" alt="Portrét 5" loading="lazy" /></figure>
+        <figure class="tile" data-tags="corporate"><img src="images/p14.jpg" alt="Firemná fotografia 5" loading="lazy" /></figure>
+        <figure class="tile" data-tags="branding"><img src="images/p15.jpg" alt="Branding 5" loading="lazy" /></figure>
+
+        <figure class="tile" data-tags="portrait"><img src="images/p16.jpg" alt="Portrét 6" loading="lazy" /></figure>
+        <figure class="tile" data-tags="corporate"><img src="images/p17.jpg" alt="Firemná fotografia 6" loading="lazy" /></figure>
+        <figure class="tile" data-tags="branding"><img src="images/p18.jpg" alt="Branding 6" loading="lazy" /></figure>
+      </div>
+
+      <dialog class="lightbox" id="lightbox" aria-label="Zväčšenie fotografie">
+        <button class="lbClose" id="lbClose" aria-label="Zavrieť">×</button>
+        <img id="lbImg" alt="" />
+      </dialog>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="sectionHead">
+        <h2>O mne</h2>
+      </div>
+
+      <div class="about">
+        <div class="aboutText">
+          <p>
+            Som fotograf pôsobiaci na Slovensku. Zameriavam sa na portréty, firemné a brandingové fotografie.
+            Preferujem čistý, minimalistický vizuál a konzistentné svetlo.
+          </p>
+          <p class="muted">
+            Ak chceš rýchlu realizáciu a výsledok použiteľný pre web/PR, napíš mi základné info o projekte.
+          </p>
+        </div>
+
+        <ul class="facts" aria-label="Základné informácie">
+          <li><span>Lokácia</span><span>Slovensko</span></li>
+          <li><span>Štýl</span><span>Minimal / Clean</span></li>
+          <li><span>Typy</span><span>Portréty · Corporate · Branding</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="sectionHead">
+        <h2>Kontakt</h2>
+        <p class="muted">Najrýchlejšie: mail. Zadaj typ fotenia, termín a miesto.</p>
+      </div>
+
+      <div class="contact">
+        <a class="button" href="mailto:info@peterfrolo.com?subject=Dopyt%20-%20fotografovanie&body=Typ%20fotenia%3A%0ATerm%C3%ADn%3A%0AMiesto%3A%0ARozsah%20(orienta%C4%8Dne)%3A%0A%C4%8Co%20je%20cie%C4%BE%20fotiek%3A%0A">
+          Napísať email
+        </a>
+
+        <div class="contactBox">
+          <h3>Krátky brief (kopíruj do emailu)</h3>
+          <pre class="brief">Typ fotenia:
+Termín:
+Miesto:
+Rozsah (orientačne):
+Použitie fotiek (web/PR/kampaň):</pre>
+          <p class="muted small">
+            Pozn.: Ak chceš formulár bez mail klienta, dá sa pridať Formspree/Netlify Forms (free tier).
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Peter Frolo</span>
+    <span class="muted">peterfrolo.com</span>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Peter Frolo",
+    "jobTitle": "Fotograf",
+    "url": "https://www.peterfrolo.com/",
+    "areaServed": "Slovensko"
+  }
+  </script>
+</body>
+</html>
